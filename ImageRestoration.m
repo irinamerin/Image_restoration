@@ -122,7 +122,7 @@ name='Radius of Truncation'; % name of window opened
 r=str2double(inputdlg(prompt,name,[1 60],{'100'})); %default value=100
 
 HH=Butter_LPF(M,N,r,10); %getting LPF in freq domain
-HH=fftshift(HH); %to decentalise the spectrum
+HH=fftshift(HH); %to decentralise the spectrum
 if s1==3   % repeating for three channels
 HH=repmat(HH,1,1,3);
 end
